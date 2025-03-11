@@ -1,0 +1,31 @@
+# Core dependencies with known vulnerabilities
+django==2.2.0  # Multiple CVEs including SQL injection vulnerabilities
+flask==0.12.2  # Multiple CVEs including security issues
+cryptography==2.8  # Older version with known vulnerabilities
+requests==2.20.0  # Several CVEs including security issues
+pillow==6.2.0  # Multiple CVEs including memory corruption vulnerabilities
+pyyaml==5.1  # Code execution vulnerability
+jinja2==2.10  # Server-side template injection vulnerability
+
+# Database dependencies
+sqlalchemy==1.3.0  # SQL injection vulnerabilities
+pymongo==3.7.0  # Older version with security issues
+
+# Web framework dependencies
+werkzeug==0.14.1  # Security issues
+tornado==5.0.2  # Security vulnerabilities
+
+# Utility dependencies
+urllib3==1.24.1  # HTTPS certificate validation issues
+paramiko==2.4.1  # Authentication bypass vulnerability
+
+# Dependencies with various licenses for license compliance testing
+matplotlib==3.0.0  # GPL-compatible license
+chardet==3.0.4  # LGPL license
+numpy==1.16.0  # MIT license
+pandas==0.24.0  # BSD license
+tensorflow==1.14.0  # Apache 2.0 license
+
+# Development dependencies
+pytest==4.6.0  # Older version
+pylint==2.3.0  # Older version
