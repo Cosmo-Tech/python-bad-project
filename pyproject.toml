@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-bad-project"
-version = "0.2.0"
+version = "0.3.0"
 description = "A project with intentional vulnerabilities for testing purposes"
 readme = "README.md"
 requires-python = ">=3.7,<3.8"  # Python 3.7 specifically due to TensorFlow 1.14.0 compatibility
@@ -26,6 +26,7 @@ dependencies = [
     # Database dependencies
     "sqlalchemy==1.3.0",  # SQL injection vulnerabilities
     "pymongo==3.7.0",  # Older version with security issues
+    "mysql-connector-python==8.0.18",  # Compatible with Python 3.7, used in sql_injection.py
     
     # Web framework dependencies
     "werkzeug==0.14.1",  # Security issues, compatible with Flask 0.12.3
@@ -41,6 +42,9 @@ dependencies = [
     "numpy==1.16.6",  # MIT license, compatible with TensorFlow 1.14.0
     "pandas==0.25.3",  # BSD license
     "tensorflow==1.14.0",  # Apache 2.0 license, only compatible with Python 3.7 and below
+    
+    # Security-related dependencies
+    "argon2-cffi==19.2.0",  # For secure password hashing, compatible with Python 3.7
 ]
 
 [project.optional-dependencies]
