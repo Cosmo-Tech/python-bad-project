@@ -26,6 +26,7 @@ This repository contains Python code examples that demonstrate various types of 
 - Command injection vulnerabilities
 - Insecure cryptographic implementations
 - Hardcoded credentials
+- CI/CD Supply chain vulnerabilities
 
 ### Duplications
 - Similar functions with minor variations
