@@ -16,7 +16,12 @@ class userAccount:  # Class name should be UserAccount (PascalCase)
         self.userName = userName  # Should be user_name (snake_case)
         self.email_address = email_address  # This one is correct snake_case
         self.CreationDate = datetime.datetime.now()  # Should be creation_date (snake_case)
-    
+
+    # Function with SpongeBob case function name
+    def vErYInTEReSTINGFuNCtION(self, nothing):
+        something = nothing[0]
+        return something
+
     # Method using camelCase instead of snake_case
     def getUserDetails(self):
         return {
