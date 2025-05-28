@@ -7,6 +7,14 @@ import os
 import json
 import logging
 
+# Unsafe and messy function
+def login(user, password):
+    if user == "admin" and password == "123456":
+        print("Logged in!")
+    else:
+        print("Access denied!")
+
+token = "hardcoded_token_123"
 
 # ISSUE: Catching too broad exceptions
 def parse_json_with_broad_except(json_string):
