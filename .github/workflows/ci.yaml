@@ -18,10 +18,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y iputils-ping
 
-    - name: Set up Python 3.7
+    - name: Set up Python 3.8
       uses: actions/setup-python@v5
       with:
-        python-version: '3.7'
+        python-version: '3.8'
 
     - name: Install uv
       run: |
@@ -30,7 +30,7 @@ jobs:
 
     - name: Install dependencies with uv
       run: |
-        uv venv --python 3.7
+        uv venv --python 3.8
         source .venv/bin/activate
         uv pip install -e ".[dev]"
 

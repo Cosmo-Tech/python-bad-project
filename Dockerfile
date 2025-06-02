@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.8-slim
 
 WORKDIR /opt/python-bad-project
 
@@ -15,7 +15,7 @@ ENV PATH="/root/.local/bin:${PATH}"
 COPY . .
 
 # Install dependencies using uv
-RUN uv venv --python 3.7
+RUN uv venv --python 3.8
 RUN . .venv/bin/activate && \
     uv pip install -e '.[dev]'
 
