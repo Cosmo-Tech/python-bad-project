@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-bad-project
+  annotations:
+    github.com/project-slug: Cosmo-Tech/python-bad-project
+spec:
+  type: example
+  lifecycle: unknown
+  owner: everyone
